@@ -32,7 +32,7 @@ jobs:
 
       - run:
           name: Chmod permissions #if permission for Gradlew Dependencies fail, use this.
-          command: sudo chmod +x deploy.sh
+          command: sudo chmod +x deploy_dev.sh
 
       - deploy:
           name: Deploy to HockeyApp
