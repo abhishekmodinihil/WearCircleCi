@@ -36,4 +36,4 @@ jobs:
 
       - deploy:
           name: Deploy to HockeyApp
-          command: ./deploy.sh app/build/outputs/apk/debug/app-debug.apk
+          command: ./deploy_dev.sh app/build/outputs/apk/debug/app-debug.apk
