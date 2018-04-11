@@ -8,6 +8,7 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
+        manifestPlaceholders = [HOCKEYAPP_APP_ID: "f20ba273fed54d01a2ae008415112517"]
     }
     buildTypes {
         release {
@@ -15,6 +16,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+}
+repositories {
+    jcenter()
 }
 
 dependencies {
@@ -26,4 +30,5 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:26.1.0'
     implementation 'com.android.support:wear:26.1.0'
     compileOnly 'com.google.android.wearable:wearable:2.3.0'
+    implementation 'net.hockeyapp.android:HockeySDK:5.1.0'
 }
