@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 AndroidAppId=f20ba273fed54d01a2ae008415112517
-HockeyAppToken=9cb95e7037ec6d42e4b4186f734a58f0
+HockeyAppToken=9597bbd4488f4b5893520aec30bd85b5
 
 
 curl \
