@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-AndroidAppId=${1:-f20ba273fed54d01a2ae008415112517}
+AndroidAppId=f20ba273fed54d01a2ae008415112517
 HockeyAppToken=9cb95e7037ec6d42e4b4186f734a58f0
+
 curl \
 -F "status=2" \
 -F "notify=0" \

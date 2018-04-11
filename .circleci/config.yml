@@ -39,7 +39,11 @@ jobs:
           path: app/build/outputs/apk/
           destination: apks/
           deployment:
-            develop:
-              branch: develop
-              commands:
-                - ./deploy_dev.sh
+      - run:
+          name: Chmod permissions #if permission for Gradlew Dependencies fail, use this.
+          command: sudo chmod +x deploy.sh
+
+      - deploy:
+          name: Deploy to HockeyApp
+          command: ./deploy.sh app/build/outputs/apk/debug/app-debug.apk
+
